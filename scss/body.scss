@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+}
+
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Puedes ajustar la distancia desde la parte inferior */
+    right: 20px; /* Puedes ajustar la distancia desde la derecha */
+    z-index: 1000; /* Para asegurarse de que el botón esté por encima de otros elementos */
+    border-radius: 10px;
+}
+
+.whatsapp-button a {
+    display: block;
+    width: 62px; /* Ancho del botón */
+    height: 62px; /* Altura del botón */
+    background-color: #187900; /* Color de fondo de WhatsApp */
+    border-radius: 10px; /* Hace que el botón sea circular */
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+
+}
+
+.whatsapp-button a:hover {
+    background-color: #128c7e; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+
+.whatsapp-button img {
+    width: 50px; /* Tamaño de la imagen del logotipo de WhatsApp */
+    height: auto;
+    margin-top: 5px; /* Alineación vertical del logotipo */
+}

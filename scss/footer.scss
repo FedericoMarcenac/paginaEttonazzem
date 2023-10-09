@@ -1,0 +1,65 @@
+.footerGeneral{
+    background-color: rgba(218, 218, 218, 0.644);
+    display: flex;
+    flex-direction: column;
+    border-top: solid black 2px;
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    margin: 1% 5%;
+}
+@media (max-width: 891px) {
+    .footer1 {
+        flex-direction: column;
+    }
+}
+.hijoFooter1{
+    background-color: rgba(62, 128, 0, 0.151);
+    border: 1px green solid;
+    margin: 1%;
+    padding: 1%;
+}
+.nietoFooter1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.imgFooter1{
+    width: 7%;
+}
+.txtNieto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80%;
+    margin: 1%;
+}
+.imgNieto{
+    width: 30%;
+    border-radius: 17px;
+}
+.sinEspacio{
+    margin: 0px 0px 3px;
+    font-size: 13px;
+}
+
+
+
+.footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.partes{
+    flex: 1;
+}
+.redes{
+    margin-bottom: 5%;
+    flex: 2;
+}
+.reservados{
+    font-size: 80%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}

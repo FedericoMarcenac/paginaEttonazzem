@@ -1,0 +1,500 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; /* Puedes ajustar la distancia desde la parte inferior */
+  right: 20px; /* Puedes ajustar la distancia desde la derecha */
+  z-index: 1000; /* Para asegurarse de que el botón esté por encima de otros elementos */
+  border-radius: 10px;
+}
+
+.whatsapp-button a {
+  display: block;
+  width: 62px; /* Ancho del botón */
+  height: 62px; /* Altura del botón */
+  background-color: #187900; /* Color de fondo de WhatsApp */
+  border-radius: 10px; /* Hace que el botón sea circular */
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button a:hover {
+  background-color: #128c7e; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+
+.whatsapp-button img {
+  width: 50px; /* Tamaño de la imagen del logotipo de WhatsApp */
+  height: auto;
+  margin-top: 5px; /* Alineación vertical del logotipo */
+}
+
+.headerGeneral {
+  display: flex;
+  flex-direction: column;
+}
+
+.cajaHeader {
+  background-color: rgba(62, 128, 0, 0.74);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid black;
+}
+
+.grupoLogo {
+  padding: 0.2%;
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+}
+
+.navegadorBoton {
+  margin-top: 0.7%;
+  margin-right: 0.9%;
+}
+
+.logoEtto {
+  width: 6rem;
+  height: 6rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20rem;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.botonHeader {
+  width: 10%;
+}
+
+.tituEtto {
+  text-align: start;
+  font-size: 25px;
+  margin: 7% 1%;
+  display: block;
+}
+
+@media (max-width: 891px) {
+  .tituEtto {
+    display: none; /* Oculta el elemento cuando la resolución es menor de 768px */
+  }
+  .logoEtto {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.buscador {
+  margin: 3%;
+  flex: 3;
+  display: flex;
+  align-items: end;
+}
+
+.tamañoBuscar {
+  width: 100%;
+  padding-left: 45%;
+}
+
+@media (max-width: 700px) {
+  .tamañoBuscar {
+    padding-left: 2%;
+  }
+}
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imagenLink {
+  width: 40%;
+  display: block;
+  border-radius: 150px;
+  margin-top: 1%;
+}
+
+.txtLink {
+  font-size: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500; /* Negrita */
+  font-weight: 700;
+}
+
+@media (max-width: 618px) {
+  .imagenLink {
+    width: 2.5rem;
+  }
+  .txtLink {
+    font-size: 50%;
+  }
+}
+.imgCarrusel {
+  width: 100%;
+}
+
+.segundoMain {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.terceroMain {
+  background-color: rgba(62, 128, 0, 0.74);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 10%;
+  padding: 1% 2%;
+  border-radius: 4px;
+}
+
+.btnLink {
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2%;
+  margin: 5% 1%;
+}
+
+.txtSegundo {
+  text-align: center;
+  margin: 1%;
+  color: black;
+}
+
+.alinear {
+  white-space: nowrap;
+  margin: 0.5%;
+}
+
+.alinear1 {
+  white-space: nowrap;
+  margin: 0.5%;
+}
+
+.imgWpp {
+  width: 2rem;
+}
+
+.imgMail {
+  width: 2rem;
+  margin-right: 3%;
+}
+
+.tituSobrino {
+  margin: 4% 4%;
+  text-align: center;
+  border-left: solid rgba(70, 70, 70, 0.808) 1px;
+  border-right: solid rgba(70, 70, 70, 0.808) 1px;
+}
+
+.imgNosotros {
+  margin-top: 10%;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 200%;
+}
+
+.horarioMain {
+  display: flex;
+  flex-direction: row;
+}
+
+.lineaMain {
+  margin: 1%;
+  padding-left: 1rem;
+}
+
+.listaHorario {
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.sacaSubrayado {
+  text-decoration: none;
+}
+
+.conactoLista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cartaNosotros {
+  background-image: url(../img/ettoEntrada.jpg);
+  background-size: cover;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.cartaNosotros::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.534);
+  opacity: 0; /* Inicialmente transparente */
+  z-index: 1;
+}
+
+.cartaNosotros:hover::before {
+  opacity: 1; /* Hace que el fondo sea visible al pasar el mouse */
+}
+
+.cartaNosotros:hover .fraseResaltada {
+  color: White;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.795);
+  z-index: 1;
+}
+
+.imgFijo {
+  width: 2rem;
+  border-radius: 30rem;
+  margin-right: 5%;
+}
+
+.sombra {
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos generales */
+.filtros {
+  margin-top: 10px;
+}
+
+.filtro {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Estilos de productos */
+.producto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.producto img {
+  max-width: 100px;
+}
+
+/* Oculta los productos por defecto */
+.producto.hidden {
+  display: none;
+}
+
+.mainProductos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.tituProductos {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Estilos para los radio buttons de categoría */
+.filtro-categoria {
+  margin-right: 10px;
+}
+
+/* Estilos para el filtro de marca (select) */
+#filtro-marca {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+}
+
+/* Estilos para los productos */
+.producto {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.producto p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  animation: marcas-carousel 25s linear infinite;
+  width: 300%;
+}
+
+.carousel img {
+  width: 18rem; /* Ajusta el ancho según tus preferencias */
+  margin: 0.25rem;
+}
+
+@keyframes marcas-carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 1280px) {
+  .carousel img {
+    width: 13rem; /* Ajusta el ancho según tus preferencias */
+    margin: 0 0.15rem;
+  }
+}
+@media (max-width: 840px) {
+  .carousel {
+    width: 400%;
+    animation: marcas-carousel 20s linear infinite;
+  }
+  .carousel img {
+    width: 8rem; /* Ajusta el ancho según tus preferencias */
+    margin: 0 0.15rem;
+  }
+}
+@media (max-width: 450px) {
+  .carousel {
+    width: 680%;
+    animation: marcas-carousel 25s linear infinite;
+  }
+  .carousel img {
+    width: 6rem; /* Ajusta el ancho según tus preferencias */
+    margin: 0 0.25rem;
+  }
+}
+.footerGeneral {
+  background-color: rgba(218, 218, 218, 0.644);
+  display: flex;
+  flex-direction: column;
+  border-top: solid black 2px;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: row;
+  margin: 1% 5%;
+}
+
+@media (max-width: 891px) {
+  .footer1 {
+    flex-direction: column;
+  }
+}
+.hijoFooter1 {
+  background-color: rgba(62, 128, 0, 0.151);
+  border: 1px green solid;
+  margin: 1%;
+  padding: 1%;
+}
+
+.nietoFooter1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.imgFooter1 {
+  width: 7%;
+}
+
+.txtNieto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 80%;
+  margin: 1%;
+}
+
+.imgNieto {
+  width: 30%;
+  border-radius: 17px;
+}
+
+.sinEspacio {
+  margin: 0px 0px 3px;
+  font-size: 13px;
+}
+
+.footer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.partes {
+  flex: 1;
+}
+
+.redes {
+  margin-bottom: 5%;
+  flex: 2;
+}
+
+.reservados {
+  font-size: 80%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=estilo.css.map */

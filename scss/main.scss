@@ -1,0 +1,265 @@
+
+.imgCarrusel{
+    width: 100%;
+}
+.segundoMain{
+    padding-left: 2%;
+    padding-right: 2%;    
+}
+.terceroMain{
+    background-color: rgba(62, 128, 0, 0.74);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 10%;
+    padding: 1% 2%;
+    border-radius: 4px;    
+}
+.btnLink{
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2%;
+    margin: 5% 1%;    
+}
+
+
+
+.txtSegundo{
+    text-align: center;
+    margin: 1%;
+    color: black;
+}
+.alinear{
+    white-space: nowrap;
+    margin: 0.5%;
+    
+}
+.alinear1{
+    white-space: nowrap;
+    margin: 0.5%;
+    
+}
+.imgWpp{
+    width: 2rem;
+}
+.imgMail{
+    width: 2rem;
+    margin-right: 3%;
+}
+.tituSobrino{
+    margin: 4% 4%;
+    text-align: center;
+    border-left: solid rgba(70, 70, 70, 0.808) 1px;
+    border-right: solid rgba(70, 70, 70, 0.808) 1px;
+}
+.imgNosotros{
+    margin-top: 10%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 200%;
+}
+.horarioMain{
+    display: flex;
+    flex-direction: row;
+}
+.lineaMain{
+    margin: 1%;
+    padding-left: 1rem;
+}
+.listaHorario{
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+.sacaSubrayado{
+    text-decoration: none;
+}
+.conactoLista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cartaNosotros{
+    background-image: url(../img/ettoEntrada.jpg);
+    background-size: cover;
+    position: relative;
+    transition: background-color 0.3s ease
+}
+.cartaNosotros::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    opacity: 0; /* Inicialmente transparente */
+    z-index: 1;
+}
+.cartaNosotros:hover::before {
+    opacity: 1; /* Hace que el fondo sea visible al pasar el mouse */
+}
+.cartaNosotros:hover .fraseResaltada {
+    color: White;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.795);
+    z-index: 1;
+}
+
+
+.imgFijo{
+    width: 2rem;
+    border-radius: 30rem;
+    margin-right: 5%;
+}
+.sombra{
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* Estilos generales */
+
+.filtros {
+    margin-top: 10px;
+}
+
+.filtro {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Estilos de productos */
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.producto img {
+    max-width: 100px;
+}
+
+/* Oculta los productos por defecto */
+.producto.hidden {
+    display: none;
+}
+.mainProductos{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.tituProductos{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Estilos para los radio buttons de categoría */
+.filtro-categoria {
+    margin-right: 10px;
+}
+
+/* Estilos para el filtro de marca (select) */
+#filtro-marca {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+}
+
+/* Estilos para los productos */
+.producto {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.producto p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    animation: marcas-carousel 25s linear infinite;
+    width: 300%;
+}
+
+.carousel img {
+    width: 18rem; /* Ajusta el ancho según tus preferencias */
+    margin: 0.25rem;
+    
+}
+@keyframes marcas-carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media (max-width: 1280px) {
+
+    .carousel img {
+        width: 13rem; /* Ajusta el ancho según tus preferencias */
+        margin: 0 0.15rem;
+    }
+
+}
+@media (max-width: 840px) {
+    .carousel{
+        width: 400%;
+        animation: marcas-carousel 20s linear infinite;
+
+    }
+    .carousel img {
+        width: 8rem; /* Ajusta el ancho según tus preferencias */
+        margin: 0 0.15rem;
+    }
+
+}
+@media (max-width: 450px) {
+    .carousel{
+        width: 680%;
+        animation: marcas-carousel 25s linear infinite;
+
+    }
+    .carousel img {
+        width: 6rem; /* Ajusta el ancho según tus preferencias */
+        margin: 0 0.25rem;
+    }
+
+}
